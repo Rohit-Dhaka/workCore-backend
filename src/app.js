@@ -22,6 +22,7 @@ import calendarRoutes from "./routes/calendar.routes.js";
 import quotationRoutes  from './routes/quotation.routes.js'
 import manufacturingRoutes from './routes/manufacturing.routes.js'
 import crmRoutes from "./routes/crm.routes.js";
+import projectRoutes from "./routes/project.routes.js";
 
 
 
@@ -56,6 +57,8 @@ app.use("/api/calendar", calendarRoutes);
 app.use("/api/quotations" , quotationRoutes)
 app.use('/api/manufacturing', manufacturingRoutes);
 app.use("/api/crm", crmRoutes);
+app.use("/api/pm", projectRoutes);
+
 
 
 

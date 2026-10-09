@@ -1,7 +1,5 @@
 
-
-import Ledger from "../models/ledger.model.js";
-
+import Ledger from "../models/Ledger.model.js";
 const calculateLedgerValues = (entry) => {
   const amount = Number(entry.amount || 0);
   const paidAmount = Number(entry.paidAmount || 0);

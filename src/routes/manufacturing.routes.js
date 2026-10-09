@@ -1,3 +1,6 @@
+
+
+
 import express from "express";
 import * as c from "../controllers/manufacturing.controller.js";
 
@@ -43,72 +46,3 @@ export default router;
 
 
 
-
-
-
-
-
-// import { Router } from "express";
-// import { protect } from "../middlewares/auth.middleware.js";
-// import { authorize } from "../middlewares/role.middleware.js";
-// import * as c from "../controllers/manufacturing.controller.js";
-
-// const router = Router();
-
-// router.use(protect, authorize("admin"));
-
-// router.get("/dashboard", c.dashboard);
-
-// router.route("/suppliers").get(c.listSuppliers).post(c.createSupplier);
-// router
-//   .route("/suppliers/:id")
-//   .get(c.getSupplier)
-//   .put(c.updateSupplier)
-//   .delete(c.deleteSupplier);
-
-// router.route("/customers").get(c.listCustomers).post(c.createCustomer);
-// router
-//   .route("/customers/:id")
-//   .get(c.getCustomer)
-//   .put(c.updateCustomer)
-//   .delete(c.deleteCustomer);
-
-// router.route("/items").get(c.listItems).post(c.createItem);
-// router
-//   .route("/items/:id")
-//   .get(c.getItem)
-//   .put(c.updateItem)
-//   .delete(c.deleteItem);
-
-// router.route("/boms").get(c.listBoms).post(c.createBom);
-// router.route("/boms/:id").put(c.updateBom).delete(c.deleteBom);
-
-// router.route("/purchases").get(c.listPurchases).post(c.createPurchase);
-// router.route("/purchases/:id").get(c.getPurchase).put(c.updatePurchase);
-// router.post("/purchases/:id/receive", c.receivePurchase);
-// router.post("/purchases/:id/cancel", c.cancelPurchase);
-// router.post("/purchases/:id/payments", c.addPurchasePayment);
-
-// router.get("/production/plan", c.productionPlan);
-// router.route("/production").get(c.listProduction).post(c.createProduction);
-// router
-//   .route("/production/:id")
-//   .get(c.getProduction)
-//   .put(c.updateProduction)
-//   .delete(c.deleteProduction);
-// router.post("/production/:id/start", c.startProduction);
-// router.post("/production/:id/complete", c.completeProduction);
-// router.post("/production/:id/cancel", c.cancelProduction);
-
-// router.route("/orders").get(c.listOrders).post(c.createOrder);
-// router.route("/orders/:id").get(c.getOrder).put(c.updateOrder);
-// router.post("/orders/:id/dispatch", c.dispatchOrder);
-// router.post("/orders/:id/deliver", c.deliverOrder);
-// router.post("/orders/:id/cancel", c.cancelOrder);
-// router.post("/orders/:id/payments", c.addOrderPayment);
-
-// router.get("/stock", c.stockSummary);
-// router.get("/stock/movements", c.stockMovements);
-// router.post("/stock/adjust", c.adjustStock);
-
-// export default router;
